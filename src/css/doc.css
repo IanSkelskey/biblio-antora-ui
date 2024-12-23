@@ -1055,6 +1055,22 @@
   white-space: pre-wrap;
 }
 
+.doc .rounded-sm {
+  border-radius: 0.25rem;
+}
+
+.doc .rounded-md {
+  border-radius: 0.5rem;
+}
+
+.doc .rounded-lg {
+  border-radius: 0.75rem;
+}
+
+.doc .rounded-full {
+  border-radius: 9999px;
+}
+
 #footnotes {
   font-size: 0.85em;
   line-height: 1.5;
