@@ -1,0 +1,106 @@
+= Bibliomation Antora UI
+// Settings:
+:experimental:
+:hide-uri-scheme:
+// Project URLs:
+:url-project: https://github.com/IanSkelskey/biblio-antora-ui
+:url-ci-pipelines: {url-project}/actions
+:img-ci-status: {url-project}/actions/workflows/publish-ui-bundle.yml/badge.svg
+// External URLs:
+:url-antora: https://antora.org
+:url-antora-docs: https://docs.antora.org
+:url-git: https://git-scm.com
+:url-nodejs: https://nodejs.org
+:url-gulp: https://gulpjs.com
+:url-asubrand: https://brandguide.asu.edu
+
+image:{img-ci-status}[CI Status (GitHub Actions), link={url-ci-pipelines}]
+
+This project is a customized version of the Antora Default UI, tailored for the Bibliomation documentation site. It provides branding, navigation updates, and enhanced features specific to Bibliomation's needs.
+
+[NOTE]
+====
+The Bibliomation UI is developed to meet the specific needs of the Bibliomation documentation site. It may not be suitable for other Antora projects without modification.
+====
+
+== Use the Bibliomation UI
+
+To use this customized UI for your Antora-generated site, add the following UI configuration to your Antora playbook:
+
+[source,yaml]
+----
+ui:
+  bundle:
+    url: https://github.com/IanSkelskey/biblio-antora-ui/releases/latest/download/ui-bundle.zip
+    snapshot: true
+
+runtime:
+  fetch: true
+----
+
+NOTE: The `snapshot` flag ensures that Antora fetches the UI bundle when the `--fetch` command-line flag is used. The `runtime.fetch` option ensures the latest bundle is retrieved.
+
+== Development Quickstart
+
+This section provides an overview of how to set up, preview, and bundle the Field Day UI project for development and deployment.
+
+=== Prerequisites
+
+To develop and preview the Field Day UI, ensure the following tools are installed:
+
+* {url-git}[Git] (command: `git`)
+* {url-nodejs}[Node.js] (commands: `node` and `npm`)
+* {url-gulp}[Gulp CLI] (command: `gulp`)
+
+==== git
+
+Verify git is installed:
+
+ $ git --version
+
+If not, install git from {url-git}[here].
+
+==== Node.js
+
+Ensure Node.js (LTS version) is installed:
+
+ $ node --version
+
+If it's not installed, download and install it from {url-nodejs}[here].
+
+==== Gulp CLI
+
+Install the Gulp CLI globally:
+
+ $ npm install -g gulp-cli
+
+Verify the installation:
+
+ $ gulp --version
+
+=== Clone and Initialize the UI Project
+
+Clone this repository and install dependencies:
+
+[subs=attributes+]
+ $ git clone {url-project}
+ $ cd field-day-antora-ui
+ $ npm install
+
+=== Preview the UI
+
+To preview the UI with sample content:
+
+ $ gulp preview
+
+Navigate to the provided URL (e.g., `http://localhost:5252`) in the terminal output to view the UI.
+
+While the server is running, any changes to source files will automatically update in the browser. Stop the server using `Ctrl+C`.
+
+=== Bundle the UI
+
+To create a production-ready UI bundle:
+
+ $ gulp bundle
+
+The UI bundle will be available at `build/ui-bundle.zip`. Use this bundle in your Antora playbook or for deployment.
