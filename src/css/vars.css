@@ -4,7 +4,8 @@
   --color-biblio-seafoam: #54a2a4; /* Bibliomation Seafoam */
   --color-biblio-blue: #2b4a82; /* Bibliomation Blue */
   /* Secondary Color Palette */
-  --color-gray-3: #747474;
+  --color-red: #e74c3c;
+  --color-gold: #f9d776;
   --color-orange: #ff7f32;
   --color-blue: #00a3e0;
   --color-green: #78be20;
@@ -41,7 +42,7 @@
   --scrollbar-thumb-color: var(--color-gray-3);
   --scrollbar_hover-thumb-color: var(--color-gray-2);
   /* navbar */
-  --navbar-background: var(--color-biblio-seafoam);
+  --navbar-background: var(--color-biblio-blue);
   --navbar-font-color: var(--color-white);
   --navbar_hover-background: var(--color-black);
   --navbar-button-background: var(--color-biblio-blue);
@@ -55,7 +56,7 @@
   --nav-background: var(--panel-background);
   --nav-border-color: var(--color-gray-3);
   --nav-line-height: 1.35;
-  --nav-heading-font-color: var(--color-biblio-seafoam);
+  --nav-heading-font-color: var(--color-biblio-blue);
   --nav-muted-color: var(--color-gray-2);
   --nav-panel-divider-color: var(--color-gray-4);
   --nav-secondary-background: var(--color-gray-5);
@@ -63,19 +64,19 @@
   --toolbar-background: var(--panel-background);
   --toolbar-border-color: var(--panel-border-color);
   --toolbar-font-color: var(--color-gray-2);
-  --toolbar-muted-color: var(--color-gray-40);
+  --toolbar-muted-color: var(--color-gray-4);
   --page-version-menu-background: var(--color-gray-5);
-  --page-version-missing-font-color: var(--color-gray-40);
+  --page-version-missing-font-color: var(--color-gray-4);
   /* admonitions */
-  --caution-color: var(--color-pink);
-  --caution-on-color: var(--color-white);
-  --important-color: var(--color-biblio-seafoam);
+  --caution-color: var(--color-gold); /* standard yellow */
+  --caution-on-color: var(--color-black);
+  --important-color: var(--color-red); /* standard red */
   --important-on-color: var(--color-white);
-  --note-color: var(--color-biblio-blue);
-  --note-on-color: var(--color-black);
-  --tip-color: var(--color-green);
+  --note-color: var(--color-turquoise); /* standard light blue */
+  --note-on-color: var(--color-white);
+  --tip-color: var(--color-green); /* standard green */
   --tip-on-color: var(--color-white);
-  --warning-color: var(--color-orange);
+  --warning-color: var(--color-orange); /* standard orange */
   --warning-on-color: var(--color-white);
   /* doc */
   --doc-font-color: var(--color-gray-1);
@@ -84,7 +85,7 @@
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
-  --heading-font-color: var(--color-biblio-seafoam);
+  --heading-font-color: var(--color-biblio-blue);
   --heading-font-weight: normal;
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
@@ -111,7 +112,7 @@
   --quote-background: var(--panel-background);
   --quote-border-color: var(--color-gray-2);
   --quote-font-color: var(--color-gray-2);
-  --quote-attribution-font-color: var(--color-gray-40);
+  --quote-attribution-font-color: var(--color-gray-4);
   --sidebar-background: var(--color-gray-4);
   --table-border-color: var(--panel-border-color);
   --table-stripe-background: var(--panel-background);
@@ -123,9 +124,9 @@
   --toc-line-height: 1.2;
   /* footer */
   --footer-line-height: var(--doc-line-height);
-  --footer-background: var(--color-biblio-seafoam); /* ASU Maroon */
-  --footer-font-color: var(--color-white); /* ASU White */
-  --footer-link-font-color: var(--color-biblio-blue); /* ASU Gold */
+  --footer-background: var(--color-biblio-blue);
+  --footer-font-color: var(--color-white);
+  --footer-link-font-color: var(--color-gold);
   /* dimensions and positioning */
   --navbar-height: calc(63 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
